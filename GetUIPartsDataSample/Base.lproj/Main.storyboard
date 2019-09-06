@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GetUIPartsDataSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="99" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2a-td-ywK">
+                                <rect key="frame" x="121.66666666666669" y="132" width="171" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Fcp-XK-Ra6"/>
+                                    <constraint firstAttribute="width" constant="171" id="SXP-fO-xZe"/>
+                                </constraints>
+                                <state key="normal" title="解析スタート！"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ラベル" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3t-oj-KsV" customClass="SampleLabelStyle" customModule="GetUIPartsDataSample" customModuleProvider="target">
+                                <rect key="frame" x="162" y="248" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9Z-O4-gsH" customClass="SampleButton" customModule="GetUIPartsDataSample" customModuleProvider="target">
+                                <rect key="frame" x="165" y="299" width="84" height="30"/>
+                                <state key="normal" title="ボタン"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I9Z-O4-gsH" firstAttribute="centerX" secondItem="r2a-td-ywK" secondAttribute="centerX" id="G4d-ia-PdU"/>
+                            <constraint firstItem="I9Z-O4-gsH" firstAttribute="top" secondItem="C3t-oj-KsV" secondAttribute="bottom" constant="30" id="ZWl-zU-LLf"/>
+                            <constraint firstItem="C3t-oj-KsV" firstAttribute="centerX" secondItem="r2a-td-ywK" secondAttribute="centerX" id="rEx-YD-Lbk"/>
+                            <constraint firstItem="r2a-td-ywK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rTl-My-FDS"/>
+                            <constraint firstItem="C3t-oj-KsV" firstAttribute="top" secondItem="r2a-td-ywK" secondAttribute="bottom" constant="62" id="uQR-k0-plx"/>
+                            <constraint firstItem="r2a-td-ywK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="z8o-xg-GSk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonParts" destination="I9Z-O4-gsH" id="8qC-LI-Ee9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="136.95652173913044"/>
+        </scene>
+    </scenes>
+</document>

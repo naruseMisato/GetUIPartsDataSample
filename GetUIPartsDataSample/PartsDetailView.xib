@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PartsDetailView" customModule="Jmty" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="223"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGS-uX-YN1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="223"/>
+                    <color key="backgroundColor" red="0.12941176469999999" green="0.61960784310000006" blue="0.38431372549999998" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="223" id="fqR-p7-iwR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTb-tf-mlv">
+                    <rect key="frame" x="330" y="0.0" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="DnH-k5-ybX"/>
+                        <constraint firstAttribute="height" constant="45" id="jHw-JC-gIt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                    <state key="normal" title="×">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パーツ情報" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1D-Ke-gIB" customClass="Title2LabelStyle" customModule="Jmty" customModuleProvider="target">
+                    <rect key="frame" x="16" y="16" width="87" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="パーツを長押しすると詳細情報を表示する。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FGk-wz-033">
+                    <rect key="frame" x="16" y="45" width="343" height="162"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="i1D-Ke-gIB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="4BS-6p-WWT"/>
+                <constraint firstItem="QTb-tf-mlv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Bgd-dH-Kb7"/>
+                <constraint firstItem="gGS-uX-YN1" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Cdy-wk-tpv"/>
+                <constraint firstItem="gGS-uX-YN1" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="D5R-op-Srl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FGk-wz-033" secondAttribute="bottom" constant="16" id="KIm-9h-huv"/>
+                <constraint firstItem="gGS-uX-YN1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XAb-wu-1lZ"/>
+                <constraint firstItem="QTb-tf-mlv" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="cjS-yx-ECi"/>
+                <constraint firstItem="FGk-wz-033" firstAttribute="top" secondItem="i1D-Ke-gIB" secondAttribute="bottom" constant="8" id="dW1-FG-ocV"/>
+                <constraint firstItem="i1D-Ke-gIB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="euL-Eo-AVZ"/>
+                <constraint firstItem="FGk-wz-033" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="fSu-jB-rGZ"/>
+                <constraint firstItem="gGS-uX-YN1" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="pAU-Qw-DeL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FGk-wz-033" secondAttribute="trailing" constant="16" id="tQJ-wI-zNq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="deleteButton" destination="QTb-tf-mlv" id="tTe-vV-A3D"/>
+                <outlet property="partsDetailTextView" destination="FGk-wz-033" id="axE-q6-xRd"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="-47.226386806596707"/>
+        </view>
+    </objects>
+</document>
